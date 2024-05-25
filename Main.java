@@ -9,41 +9,15 @@ import javafx.geometry.Pos;
 import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 
-public class Main extends Application 
-{ 
-  
+public class Main extends Application {
+
   @Override
   public void start(Stage primaryStage) {
-    
-    Label label; 
-    TextField tf;
-    Button button;
-    VBox vbox;
-    Scene scene;
-    
-    tf = new TextField("Text Field!");
-    tf.setMaxWidth(200);
+    ScientificCalculator calculator = new ScientificCalculator();
+    calculator.start(primaryStage);
+  }
 
-    label = new Label("Type text and click the button");
-    button = new Button("Click"); 
-
-    button.setOnAction(new EventHandler<ActionEvent>() {
-      @Override public void handle(ActionEvent e) {
-        label.setText(tf.getText());
-      }
-    });
-
-    vbox = new VBox(label, tf, button);
-    vbox.setSpacing(20);
-    vbox.setAlignment(Pos.CENTER);
-    scene = new Scene(vbox, 300, 200);
-    
-    primaryStage.setTitle("A Simple Scene!");
-    primaryStage.setScene(scene);
-    primaryStage.show();
-  } 
-    
   public static void main(String[] args) {
     launch(args);
   }
-} 
+}
