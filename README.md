@@ -63,5 +63,3 @@ This project uses JavaFX which is licensed under GPL v2 with the Classpath Excep
 ## Contact
 
 Grant Ledbettter - <grantledbetter12@gmail.com>
-
-Project Link: [https://github.com/yourusername/scientific-calculator](https://github.com/yourusername/scientific-calculator)
